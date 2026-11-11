@@ -64,9 +64,9 @@ IDLE ──(wake)──> QUEUED ──(worker picks up)──> RUNNING
 
 Feather is currently in alpha. I feel that Feather needs Falcon and Falcon needs Feather and Falcon needs production usage to grow 😉 . While the core scheduling and I/O mechanics are stable, several areas are actively being improved:
 
--[ ] Unification of Approaches - Since I'm experimenting with stuff I would also like to experiment with **Unified Notification Mechanism (UNM)** which I think would implementing two different control flows for Rediness and Completion based models.
--[ ] Cancellation - This is one of the main fundamental building block of asynchronous / distributed system which is pending to be implemented. I think that UNM still holds priority, and cancellation will be easy after that.
--[ ] Chase-Lev lock-free deque per worker thread - Not sure on % the impact over the current work stealing 
+- [ ] Unification of Approaches - Since I'm experimenting with stuff I would also like to experiment with **Unified Notification Mechanism (UNM)** which I think would implementing two different control flows for Rediness and Completion based models.
+- [ ] Cancellation - This is one of the main fundamental building block of asynchronous / distributed system which is pending to be implemented. I think that UNM still holds priority, and cancellation will be easy after that.
+- [ ] Chase-Lev lock-free deque per worker thread - Not sure on % the impact over the current work stealing 
 
  ## Platform Support
 
@@ -79,3 +79,5 @@ Windows          | ❌              | IOCP         | ❌
 ## License
 
 MIT License. Feel free to use, hack on, and embed Feather in your Jai projects.
+
+Developed on `Version: beta 0.2.030, built on 2 July 2026.`
